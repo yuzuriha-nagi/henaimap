@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Persona 5 Royal",
+    "category": "Game",
+    "description": "A stylish JRPG about high schoolers who lead double lives as Phantom Thieves. The music, UI, and story are all top-tier.",
+    "imageUrl": "https://images.placeholder.com/persona5"
+  },
+  {
+    "id": "2",
+    "title": "Never Let Me Go",
+    "category": "Music",
+    "description": "A beautiful and haunting album with deeply emotional themes.",
+    "imageUrl": "https://images.placeholder.com/neverletmego"
+  },
+  {
+    "id": "3",
+    "title": "Kirby",
+    "category": "Character",
+    "description": "The pink puffball from Dream Land. He's cute, powerful, and loves to eat. A true icon.",
+    "imageUrl": "https://images.placeholder.com/kirby"
+  }
+]
