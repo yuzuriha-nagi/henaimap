@@ -58,27 +58,27 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ツユ",
     "category": "Music",
     "description": "中毒性のあるメロディと、心に刺さる鋭い歌詞が特徴の音楽ユニット。",
-    "imageUrl": ""
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9389aa1c6f469891613ed3c2"
   },
   {
     "id": "music-2",
     "title": "DUSTCELL",
     "category": "Music",
     "description": "ボーカルEMAとコンポーザーMisumiによる2人組ユニット。独特の世界観とエレクトロなサウンドが魅力。",
-    "imageUrl": ""
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc4dde5c9dd36df05300e69d1"
   },
   {
     "id": "music-3",
     "title": "Mili",
     "category": "Music",
     "description": "クラシカルなサウンドとファンタジーな世界観を融合させた、世界的に活躍する音楽グループ。",
-    "imageUrl": ""
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eba5b0a3fb0f275ed292894475"
   },
   {
     "id": "music-4",
     "title": "ずっと真夜中でいいのに。",
     "category": "Music",
     "description": "ACAねを中心とする音楽ユニット。複雑な構成の楽曲と、圧倒的な歌唱力が特徴。",
-    "imageUrl": ""
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebbdb9ad4ad4954ad77e40aa83"
   }
 ];
