@@ -43,42 +43,42 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ヤン",
     "category": "Character",
     "description": "Library of Ruinaに登場。人差し指の伝令。その運命と物語は多くのプレイヤーに衝撃を与えた。",
-    "imageUrl": "https://pbs.twimg.com/media/EG6QvGvU4AAz6Fh?format=png&name=small"
+    "imageUrl": "https://pbs.twimg.com/media/GPVMv10aAAA9O2S?format=jpg&name=small"
   },
   {
     "id": "char-2",
     "title": "ネツァク",
     "category": "Character",
     "description": "Lobotomy CorporationおよびLibrary of Ruinaに登場。安楽死層の指定司書。無気力だがどこか憎めない性格。",
-    "imageUrl": "https://pbs.twimg.com/media/D-7GZ_jU8AA0D8l?format=png&name=small"
+    "imageUrl": "https://pbs.twimg.com/media/GV8t3bba0AA8w2B?format=jpg&name=small"
   },
   // --- Music ---
   {
     "id": "music-1",
     "title": "ツユ",
     "category": "Music",
-    "description": "中毒性のあるメロディと、心に刺さる鋭い歌詞が特徴の音楽ユニット。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9389aa1c6f469891613ed3c2"
+    "description": "中毒性のあるメロディ and 心に刺さる鋭い歌詞が特徴の音楽ユニット。",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9669665484509303011e7273"
   },
   {
     "id": "music-2",
     "title": "DUSTCELL",
     "category": "Music",
-    "description": "ボーカルEMAとコンポーザーMisumiによる2人組ユニット。独特の世界観とエレクトロなサウンドが魅力。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc4dde5c9dd36df05300e69d1"
+    "description": "ボーカルEMA and コンポーザーMisumiによる2人組ユニット。独特の世界観 and エレクトロなサウンドが魅力。",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9646953272e40c3721b9ae22"
   },
   {
     "id": "music-3",
     "title": "Mili",
     "category": "Music",
     "description": "クラシカルなサウンド and ファンタジーな世界観を融合させた、世界的に活躍する音楽グループ。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eba5b0a3fb0f275ed292894475"
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb920795303ba201058478bb31"
   },
   {
     "id": "music-4",
     "title": "ずっと真夜中でいいのに。",
     "category": "Music",
-    "description": "ACAねを中心とする音楽ユニット。複雑な構成の楽曲と、圧倒的な歌唱力が特徴。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb79652874693439932a963a02"
+    "description": "ACAねを中心とする音楽ユニット。複雑な構成の楽曲 and 圧倒的な歌唱力が特徴。",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb796796296513f7196559e33a"
   }
 ];
