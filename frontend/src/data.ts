@@ -43,14 +43,14 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ヤン",
     "category": "Character",
     "description": "Library of Ruinaに登場。人差し指の伝令。その運命と物語は多くのプレイヤーに衝撃を与えた。",
-    "imageUrl": "https://static.wikia.nocookie.net/library-of-ruina/images/1/1a/Yan_Messenger.png"
+    "imageUrl": "https://s1.zerochan.net/Yan.Vismok.600.3204918.jpg"
   },
   {
     "id": "char-2",
     "title": "ネツァク",
     "category": "Character",
     "description": "Lobotomy CorporationおよびLibrary of Ruinaに登場。安楽死層の指定司書。無気力だがどこか憎めない性格。",
-    "imageUrl": "https://static.wikia.nocookie.net/library-of-ruina/images/4/4a/Netzach_LoR.png"
+    "imageUrl": "https://s1.zerochan.net/Netzach.%28Project.Moon%29.600.3117562.jpg"
   },
   // --- Music ---
   {
