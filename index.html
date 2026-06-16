@@ -10,6 +10,7 @@
             --card-bg: #1e293b;
             --text-color: #f8fafc;
             --accent: #38bdf8;
+            --modal-overlay: rgba(0, 0, 0, 0.8);
         }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -52,6 +53,7 @@
             overflow: hidden;
             transition: transform 0.2s;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
         }
         .card:hover {
             transform: translateY(-5px);
@@ -73,6 +75,60 @@
             font-weight: bold;
             font-size: 1rem;
             margin: 0;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--modal-overlay);
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.6;
+        }
+        .close-btn:hover { opacity: 1; }
+        .modal-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        .song-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .song-item {
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .song-item:hover {
+            background: rgba(255, 255, 255, 0.1);
         }
 
         footer {
@@ -143,25 +199,25 @@
         <!-- 音楽 -->
         <div class="section-title">音楽</div>
         <div class="grid">
-            <div class="card">
+            <div class="card" onclick="showSongs('ツユ', ['終点の先があるとするならば', '風薫る空の下', '傷つけど愛してる'])">
                 <img src="https://images.weserv.nl/?url=yt3.googleusercontent.com/WxwAUNuEUtkY_WT52xwfWw_dP9cHmZbuVer2QeOxKuvQdiBiFFY7hmFhgy-i6XYn-CCRYuB6=s900-c-k-c0x00ffffff-no-rj" class="card-img" alt="ツユ">
                 <div class="card-content">
                     <p class="card-title">ツユ</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onclick="showSongs('DUSTCELL', ['caffeine', '表情差分', 'Void'])">
                 <img src="https://images.weserv.nl/?url=alltstudio.jp/wp/wp-content/uploads/2024/06/DUSTCELL_MainAP_suquare-1920.jpg" class="card-img" alt="DUSTCELL">
                 <div class="card-content">
                     <p class="card-title">DUSTCELL</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onclick="showSongs('Mili', ['Children of the city', 'Gone angels', 'world.execute(me)'])">
                 <img src="https://images.weserv.nl/?url=images.squarespace-cdn.com/content/v1/52143a7ae4b0f9bd8308dc73/467220c7-6c9f-46fd-b659-f75020ab4aea/mili_group_fix.jpg" class="card-img" alt="Mili">
                 <div class="card-content">
                     <p class="card-title">Mili</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onclick="showSongs('ずっと真夜中でいいのに。', ['暗く黒く', 'お勉強しといてよ', '秒針を噛む'])">
                 <img src="https://images.weserv.nl/?url=yt3.googleusercontent.com/ytc/AIdro_k65c3FqRpwfe066estQZsGjy_sBu1Y0sV_6_C23VXUlho=s900-c-k-c0x00ffffff-no-rj" class="card-img" alt="ずっと真夜中でいいのに。">
                 <div class="card-content">
                     <p class="card-title">ずっと真夜中でいいのに。</p>
@@ -169,6 +225,39 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div id="songModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalTitle" class="modal-title"></div>
+            <ul id="songList" class="song-list"></ul>
+        </div>
+    </div>
+
+    <script>
+        function showSongs(artist, songs) {
+            const modal = document.getElementById('songModal');
+            const title = document.getElementById('modalTitle');
+            const list = document.getElementById('songList');
+            
+            title.innerText = artist + ' のおすすめ';
+            list.innerHTML = '';
+            
+            songs.forEach(song => {
+                const li = document.createElement('li');
+                li.className = 'song-item';
+                li.innerText = song;
+                list.appendChild(li);
+            });
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('songModal').style.display = 'none';
+        }
+    </script>
 
     <footer>
         &copy; 2026 My Favorite Things
