@@ -58,27 +58,27 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ツユ",
     "category": "Music",
     "description": "中毒性のあるメロディと、心に刺さる鋭い歌詞が特徴の音楽ユニット。",
-    "imageUrl": "https://tuyu-official.jp/wp-content/themes/tuyu/assets/images/common/ogp.png"
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9389aa1c6f469891613ed3c2"
   },
   {
     "id": "music-2",
     "title": "DUSTCELL",
     "category": "Music",
     "description": "ボーカルEMAとコンポーザーMisumiによる2人組ユニット。独特の世界観とエレクトロなサウンドが魅力。",
-    "imageUrl": "https://alltstudio.jp/wp-content/uploads/2024/10/DUSTCELL_artist_2024.jpg"
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc4dde5c9dd36df05300e69d1"
   },
   {
     "id": "music-3",
     "title": "Mili",
     "category": "Music",
-    "description": "クラシカルなサウンドとファンタジーな世界観を融合させた、世界的に活躍する音楽グループ。",
-    "imageUrl": "https://images.squarespace-cdn.com/content/v1/5937896037c58176809f591a/1525351334436-8L6X6X6X6X6X6X6X6X6X/Mili_Artist_Photo_2018.jpg"
+    "description": "クラシカルなサウンド and ファンタジーな世界観を融合させた、世界的に活躍する音楽グループ。",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eba5b0a3fb0f275ed292894475"
   },
   {
     "id": "music-4",
     "title": "ずっと真夜中でいいのに。",
     "category": "Music",
     "description": "ACAねを中心とする音楽ユニット。複雑な構成の楽曲と、圧倒的な歌唱力が特徴。",
-    "imageUrl": "https://zutomayo.net/assets/img/ogp.jpg"
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb79652874693439932a963a02"
   }
 ];
