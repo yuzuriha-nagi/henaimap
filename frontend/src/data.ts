@@ -7,35 +7,35 @@ export const favoritesData: FavoriteItem[] = [
     "title": "Limbus Company",
     "category": "Game",
     "description": "Project Moonが贈る、罪を背負った12人の囚人たちと共に地獄を巡る罪悪共鳴残酷RPG。",
-    "imageUrl": ""
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg"
   },
   {
     "id": "game-2",
     "title": "Lobotomy Corporation",
     "category": "Game",
     "description": "怪物を収容し、エネルギーを抽出する管理シミュレーション。Project Moonの世界観の原点。",
-    "imageUrl": ""
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/568220/header.jpg"
   },
   {
     "id": "game-3",
     "title": "Library of Ruina",
     "category": "Game",
     "description": "「図書館」に訪れる客を「接待」し、本へと変えていく図書館バトルシミュレーション。",
-    "imageUrl": ""
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1256670/header.jpg"
   },
   {
     "id": "game-4",
     "title": "VRChat",
     "category": "Game",
     "description": "メタバース空間で世界中の人々と交流できる、自由度の高いソーシャルVRプラットフォーム。",
-    "imageUrl": ""
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg"
   },
   {
     "id": "game-5",
     "title": "Street Fighter 6",
     "category": "Game",
     "description": "格闘ゲームの金字塔。新操作「モダンタイプ」の導入で、誰でも熱い対戦が楽しめる最新作。",
-    "imageUrl": ""
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg"
   },
   // --- Characters ---
   {

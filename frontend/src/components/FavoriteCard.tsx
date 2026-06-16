@@ -11,9 +11,15 @@ const FavoriteCard = ({ item }: Props) => {
   return (
     <div className="favorite-card" onClick={() => navigate(`/detail/${item.id}`)}>
       <div className="card-image">
-        {item.category === 'Game' && '🎮'}
-        {item.category === 'Music' && '🎵'}
-        {item.category === 'Character' && '👤'}
+        {item.imageUrl ? (
+          <img src={item.imageUrl} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        ) : (
+          <>
+            {item.category === 'Game' && '🎮'}
+            {item.category === 'Music' && '🎵'}
+            {item.category === 'Character' && '👤'}
+          </>
+        )}
       </div>
       <div className="card-content">
         <span className="card-category">{item.category}</span>

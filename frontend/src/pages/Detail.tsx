@@ -19,9 +19,15 @@ const Detail = () => {
       <button onClick={() => navigate('/')} style={{ marginBottom: '1rem' }}>&larr; Back to List</button>
       <div className="detail-header">
         <div className="detail-image">
-          {item.category === 'Game' && '🎮'}
-          {item.category === 'Music' && '🎵'}
-          {item.category === 'Character' && '👤'}
+          {item.imageUrl ? (
+            <img src={item.imageUrl} alt={item.title} style={{ width: '100%', borderRadius: '8px' }} />
+          ) : (
+            <>
+              {item.category === 'Game' && '🎮'}
+              {item.category === 'Music' && '🎵'}
+              {item.category === 'Character' && '👤'}
+            </>
+          )}
         </div>
         <div className="detail-info">
           <span className="card-category">{item.category}</span>
