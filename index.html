@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent: #38bdf8;
+            --game-color: #f43f5e;
+            --char-color: #10b981;
+            --music-color: #8b5cf6;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--accent), var(--music-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            background-color: #000;
+        }
+        .game-card .card-img {
+            aspect-ratio: 460 / 215;
+        }
+        .card-content {
+            padding: 12px;
+            text-align: center;
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .category-tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .tag-game { background-color: var(--game-color); }
+        .tag-char { background-color: var(--char-color); }
+        .tag-music { background-color: var(--music-color); }
+
+        footer {
+            margin-top: 50px;
+            opacity: 0.6;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Favorites</h1>
+    </header>
+
+    <div class="container">
+        <!-- Games -->
+        <div class="section-title">Games</div>
+        <div class="grid">
+            <div class="card game-card">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg" class="card-img" alt="Limbus Company">
+                <div class="card-content">
+                    <span class="category-tag tag-game">Game</span>
+                    <p class="card-title">Limbus Company</p>
+                </div>
+            </div>
+            <div class="card game-card">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/568220/header.jpg" class="card-img" alt="Lobotomy Corporation">
+                <div class="card-content">
+                    <span class="category-tag tag-game">Game</span>
+                    <p class="card-title">Lobotomy Corporation</p>
+                </div>
+            </div>
+            <div class="card game-card">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1256670/header.jpg" class="card-img" alt="Library of Ruina">
+                <div class="card-content">
+                    <span class="category-tag tag-game">Game</span>
+                    <p class="card-title">Library of Ruina</p>
+                </div>
+            </div>
+            <div class="card game-card">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg" class="card-img" alt="VRChat">
+                <div class="card-content">
+                    <span class="category-tag tag-game">Game</span>
+                    <p class="card-title">VRChat</p>
+                </div>
+            </div>
+            <div class="card game-card">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg" class="card-img" alt="Street Fighter 6">
+                <div class="card-content">
+                    <span class="category-tag tag-game">Game</span>
+                    <p class="card-title">Street Fighter 6</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Characters -->
+        <div class="section-title">Characters</div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://pbs.twimg.com/media/GPVMv10aAAA9O2S?format=jpg&name=small" class="card-img" alt="ヤン">
+                <div class="card-content">
+                    <span class="category-tag tag-char">Character</span>
+                    <p class="card-title">ヤン</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://pbs.twimg.com/media/GV8t3bba0AA8w2B?format=jpg&name=small" class="card-img" alt="ネツァク">
+                <div class="card-content">
+                    <span class="category-tag tag-char">Character</span>
+                    <p class="card-title">ネツァク</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music -->
+        <div class="section-title">Music</div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb9669665484509303011e7273" class="card-img" alt="ツユ">
+                <div class="card-content">
+                    <span class="category-tag tag-music">Music</span>
+                    <p class="card-title">ツユ</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb9646953272e40c3721b9ae22" class="card-img" alt="DUSTCELL">
+                <div class="card-content">
+                    <span class="category-tag tag-music">Music</span>
+                    <p class="card-title">DUSTCELL</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb920795303ba201058478bb31" class="card-img" alt="Mili">
+                <div class="card-content">
+                    <span class="category-tag tag-music">Music</span>
+                    <p class="card-title">Mili</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb796796296513f7196559e33a" class="card-img" alt="ずっと真夜中でいいのに。">
+                <div class="card-content">
+                    <span class="category-tag tag-music">Music</span>
+                    <p class="card-title">ずっと真夜中でいいのに。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 My Favorite Things
+    </footer>
+</body>
+</html>
