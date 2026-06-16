@@ -110,25 +110,29 @@
             opacity: 0.6;
         }
         .close-btn:hover { opacity: 1; }
-        .modal-title {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: var(--accent);
-        }
         .song-list {
             list-style: none;
             padding: 0;
             margin: 0;
         }
         .song-item {
-            padding: 12px;
-            margin: 10px 0;
+            margin: 15px 0;
+        }
+        .song-link {
+            display: block;
+            padding: 15px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
-            transition: background 0.2s;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.2s;
+            font-weight: bold;
+            border: 1px solid transparent;
         }
-        .song-item:hover {
+        .song-link:hover {
             background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+            transform: scale(1.02);
         }
 
         footer {
@@ -199,25 +203,41 @@
         <!-- 音楽 -->
         <div class="section-title">音楽</div>
         <div class="grid">
-            <div class="card" onclick="showSongs('ツユ', ['終点の先があるとするならば', '風薫る空の下', '傷つけど愛してる'])">
+            <div class="card" onclick="showSongs([
+                {name: '終点の先があるとするならば', url: 'https://www.youtube.com/watch?v=vcw5THyM7Jo'},
+                {name: '風薫る空の下', url: 'https://www.youtube.com/watch?v=vcw5THyM7Jo'},
+                {name: '傷つけど愛してる', url: 'https://www.youtube.com/watch?v=iGIqREB16l4'}
+            ])">
                 <img src="https://images.weserv.nl/?url=yt3.googleusercontent.com/WxwAUNuEUtkY_WT52xwfWw_dP9cHmZbuVer2QeOxKuvQdiBiFFY7hmFhgy-i6XYn-CCRYuB6=s900-c-k-c0x00ffffff-no-rj" class="card-img" alt="ツユ">
                 <div class="card-content">
                     <p class="card-title">ツユ</p>
                 </div>
             </div>
-            <div class="card" onclick="showSongs('DUSTCELL', ['caffeine', '表情差分', 'Void'])">
+            <div class="card" onclick="showSongs([
+                {name: 'caffeine', url: 'https://www.youtube.com/watch?v=p468sN0_X8g'},
+                {name: '表情差分', url: 'https://www.youtube.com/watch?v=lB3mij3gmVo'},
+                {name: 'Void', url: 'https://www.youtube.com/watch?v=vVfFwFvH3A0'}
+            ])">
                 <img src="https://images.weserv.nl/?url=alltstudio.jp/wp/wp-content/uploads/2024/06/DUSTCELL_MainAP_suquare-1920.jpg" class="card-img" alt="DUSTCELL">
                 <div class="card-content">
                     <p class="card-title">DUSTCELL</p>
                 </div>
             </div>
-            <div class="card" onclick="showSongs('Mili', ['Children of the city', 'Gone angels', 'world.execute(me)'])">
+            <div class="card" onclick="showSongs([
+                {name: 'Children of the city', url: 'https://www.youtube.com/watch?v=uK1X_3v_mCg'},
+                {name: 'Gone angels', url: 'https://www.youtube.com/watch?v=qh7CFsnfdpk'},
+                {name: 'world.execute(me)', url: 'https://www.youtube.com/watch?v=ESx_hy1n7HA'}
+            ])">
                 <img src="https://images.weserv.nl/?url=images.squarespace-cdn.com/content/v1/52143a7ae4b0f9bd8308dc73/467220c7-6c9f-46fd-b659-f75020ab4aea/mili_group_fix.jpg" class="card-img" alt="Mili">
                 <div class="card-content">
                     <p class="card-title">Mili</p>
                 </div>
             </div>
-            <div class="card" onclick="showSongs('ずっと真夜中でいいのに。', ['暗く黒く', 'お勉強しといてよ', '秒針を噛む'])">
+            <div class="card" onclick="showSongs([
+                {name: '暗く黒く', url: 'https://www.youtube.com/watch?v=dcU25y_JW_w'},
+                {name: 'お勉強しといてよ', url: 'https://www.youtube.com/watch?v=Atvsg_zogxo'},
+                {name: '秒針を噛む', url: 'https://www.youtube.com/watch?v=GJI4Gv7N8as'}
+            ])">
                 <img src="https://yt3.googleusercontent.com/ytc/AIdro_k65c3FqRpwfe066estQZsGjy_sBu1Y0sV_6_C23VXUlho=s900-c-k-c0x00ffffff-no-rj" class="card-img" alt="ずっと真夜中でいいのに。">
                 <div class="card-content">
                     <p class="card-title">ずっと真夜中でいいのに。</p>
@@ -230,24 +250,28 @@
     <div id="songModal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div id="modalTitle" class="modal-title"></div>
             <ul id="songList" class="song-list"></ul>
         </div>
     </div>
 
     <script>
-        function showSongs(artist, songs) {
+        function showSongs(songs) {
             const modal = document.getElementById('songModal');
-            const title = document.getElementById('modalTitle');
             const list = document.getElementById('songList');
             
-            title.innerText = artist + ' のおすすめ';
             list.innerHTML = '';
             
             songs.forEach(song => {
                 const li = document.createElement('li');
                 li.className = 'song-item';
-                li.innerText = song;
+                
+                const a = document.createElement('a');
+                a.href = song.url;
+                a.target = '_blank';
+                a.className = 'song-link';
+                a.innerText = song.name;
+                
+                li.appendChild(a);
                 list.appendChild(li);
             });
             
