@@ -43,14 +43,14 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ヤン",
     "category": "Character",
     "description": "Library of Ruinaに登場。人差し指の伝令。その運命と物語は多くのプレイヤーに衝撃を与えた。",
-    "imageUrl": ""
+    "imageUrl": "https://pbs.twimg.com/media/FSRX4OnaAAAnW0l?format=jpg&name=large"
   },
   {
     "id": "char-2",
     "title": "ネツァク",
     "category": "Character",
     "description": "Lobotomy CorporationおよびLibrary of Ruinaに登場。安楽死層の指定司書。無気力だがどこか憎めない性格。",
-    "imageUrl": ""
+    "imageUrl": "https://pbs.twimg.com/media/FcFc_mCaAAAtP-a?format=jpg&name=large"
   },
   // --- Music ---
   {
