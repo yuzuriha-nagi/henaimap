@@ -43,14 +43,14 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ヤン",
     "category": "Character",
     "description": "Library of Ruinaに登場。人差し指の伝令。その運命と物語は多くのプレイヤーに衝撃を与えた。",
-    "imageUrl": "https://s1.zerochan.net/Yan.Vismok.600.3204918.jpg"
+    "imageUrl": "https://pbs.twimg.com/media/EG6QvGvU4AAz6Fh?format=png&name=small"
   },
   {
     "id": "char-2",
     "title": "ネツァク",
     "category": "Character",
     "description": "Lobotomy CorporationおよびLibrary of Ruinaに登場。安楽死層の指定司書。無気力だがどこか憎めない性格。",
-    "imageUrl": "https://s1.zerochan.net/Netzach.%28Project.Moon%29.600.3117562.jpg"
+    "imageUrl": "https://pbs.twimg.com/media/D-7GZ_jU8AA0D8l?format=png&name=small"
   },
   // --- Music ---
   {
@@ -58,27 +58,27 @@ export const favoritesData: FavoriteItem[] = [
     "title": "ツユ",
     "category": "Music",
     "description": "中毒性のあるメロディと、心に刺さる鋭い歌詞が特徴の音楽ユニット。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9389aa1c6f469891613ed3c2"
+    "imageUrl": "https://tuyu-official.jp/wp-content/themes/tuyu/assets/images/common/ogp.png"
   },
   {
     "id": "music-2",
     "title": "DUSTCELL",
     "category": "Music",
     "description": "ボーカルEMAとコンポーザーMisumiによる2人組ユニット。独特の世界観とエレクトロなサウンドが魅力。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc4dde5c9dd36df05300e69d1"
+    "imageUrl": "https://alltstudio.jp/wp-content/uploads/2024/10/DUSTCELL_artist_2024.jpg"
   },
   {
     "id": "music-3",
     "title": "Mili",
     "category": "Music",
     "description": "クラシカルなサウンドとファンタジーな世界観を融合させた、世界的に活躍する音楽グループ。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eba5b0a3fb0f275ed292894475"
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/5937896037c58176809f591a/1525351334436-8L6X6X6X6X6X6X6X6X6X/Mili_Artist_Photo_2018.jpg"
   },
   {
     "id": "music-4",
     "title": "ずっと真夜中でいいのに。",
     "category": "Music",
     "description": "ACAねを中心とする音楽ユニット。複雑な構成の楽曲と、圧倒的な歌唱力が特徴。",
-    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebbdb9ad4ad4954ad77e40aa83"
+    "imageUrl": "https://zutomayo.net/assets/img/ogp.jpg"
   }
 ];
