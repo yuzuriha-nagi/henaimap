@@ -24,7 +24,6 @@ const FavoriteCard = ({ item }: Props) => {
       <div className="card-content">
         <span className="card-category">{item.category}</span>
         <h3 className="card-title">{item.title}</h3>
-        <p className="card-snippet">{item.description.substring(0, 60)}...</p>
       </div>
     </div>
   );

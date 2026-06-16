@@ -32,7 +32,6 @@ const Detail = () => {
         <div className="detail-info">
           <span className="card-category">{item.category}</span>
           <h2>{item.title}</h2>
-          <p>{item.description}</p>
         </div>
       </div>
     </div>
